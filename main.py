@@ -20,6 +20,8 @@ app = create_app()
 app.app_context().push()
 ''' End Boilerplate Code '''
 
+##### Question 2 Laptop Filter Function #####
+
 def laptop_filter(laptops, brand='Any', display_size='Any', graphics_brand='Any', processor_brand='Any', price_range=13000):
 
   if price_range:
@@ -29,7 +31,7 @@ def laptop_filter(laptops, brand='Any', display_size='Any', graphics_brand='Any'
 
   return laptops
 
-############### Question 2 Routes ##########
+############### Question 3 Routes ##########
 
 @app.route('/')
 def index():
@@ -45,7 +47,7 @@ def delete_action(id):
 def insert_action():
   return 'insert action'
 
-############### Question 3 Routes ###########
+############### Question 4 Routes ###########
 
 @app.route('/app')
 def client_app():
