@@ -29,7 +29,7 @@ def laptop_filter(laptops, brand='Any', display_size='Any', graphics_brand='Any'
 
   return laptops
 
-############### Question 3 Routes ##########
+############### Question 2 Routes ##########
 
 @app.route('/')
 def index():
@@ -45,7 +45,7 @@ def delete_action(id):
 def insert_action():
   return 'insert action'
 
-############### Question 4 Routes ###########
+############### Question 3 Routes ###########
 
 @app.route('/app')
 def client_app():
@@ -65,7 +65,7 @@ def create_laptop():
 def delete_laptops(id):
   return 'delete data'
 
-
+#############################################
 
 
 if __name__ == '__main__':
